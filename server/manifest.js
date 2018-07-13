@@ -27,12 +27,6 @@ module.exports = new Confidence.Store({
                 options: {}
             },
             {
-<<<<<<< HEAD
-                plugin: {
-                    $filter: 'NODE_ENV',
-                    $default: 'hpal-debug',
-                    production: Toys.noop
-=======
                 plugin: 'schwifty',
                 options: {
                     $filter: 'NODE_ENV',
@@ -53,7 +47,6 @@ module.exports = new Confidence.Store({
                     production: {
                         migrateOnStart: false
                     }
->>>>>>> 4543532... (flavor) objection v2.1.1
                 }
             }
         ]

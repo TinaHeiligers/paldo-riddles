@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "boom": "7.x.x",
+    "fs": "0.0.1-security",
     "haute-couture": "3.x.x",
     "joi": "13.x.x",
     "objection": "1.x.x",

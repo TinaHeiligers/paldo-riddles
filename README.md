@@ -64,12 +64,22 @@ Making get request to [riddle-random](http://localhost:3000/riddle-random) or to
     "answer": "Of course!",
     "id": 2
 }`
+
 9. Uploading image files:
 The endpoint to test image file uploads is found at [upload-file](http://localhost:3000/upload-file), takes file(s) as the payload and returns a static message with a log of the file details on the console. Currently, any files uploaded are not saved anywhere.
+
 The route takes the following configuration:
+
 Headers: "key":"Content-Type","value":"multipart/form-data;
+
 In the payload (body tab in Postman), select 'form-data' and a name for the first item you want to upload, select 'file' as the item type (see details below) and select the file you want to upload within the Value cell.
-If all goes well, you should see `Received your data` in the response body, have a 200 status returned on the request and in your terminal window where the server is running, See a log of the file details uploaded:
+
+If all goes well, you should see 
+
+`Received your data` 
+
+in the response body, have a 200 status returned on the request and in your terminal window where the server is running, See a log of the file details uploaded:
+
 `{ image:
    { filename: 'mainliningCoffee.jpeg',
      path: '/var/folders/1k/08z_48z13fqdsnld54sgpnx80000gp/T/1531677939795-56660-72237b35c9029df5',

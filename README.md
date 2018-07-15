@@ -80,16 +80,19 @@ If all goes well, you should see
 
 in the response body, have a 200 status returned on the request and in your terminal window where the server is running, See a log of the file details uploaded:
 
-```json
-{ image:
-   { filename: 'mainliningCoffee.jpeg',
-     path: '/var/folders/1k/08z_48z13fqdsnld54sgpnx80000gp/T/1531677939795-56660-72237b35c9029df5',
-     headers:
-      { 'content-disposition': 'form-data; name="image"; filename="mainliningCoffee.jpeg"',
-        'content-type': 'image/jpeg' },
-     bytes: 9563 },
+`
+{
+    image: {
+        filename: 'mainliningCoffee.jpeg',
+        path: '/var/folders/1k/08z_48z13fqdsnld54sgpnx80000gp/T/1531677939795-56660-72237b35c9029df5',
+        headers: {
+            'content-disposition': 'form-data; name="image"; filename="mainliningCoffee.jpeg"',
+            'content-type': 'image/jpeg'
+        },
+        bytes: 9563
+    },
 }
-```
+`
 
 ### Step-by-step postman instructions to upload a file:
 
